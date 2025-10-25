@@ -20,3 +20,7 @@ def test_invalid_title():
     def test_email_notification_simulation():
     task = Task("Teste", "Desc", "alta")
     assert task.titulo == "Teste"  # Simples para demo
+
+    def test_status_default():
+    task = Task("Teste", "Desc", "baixa")
+    assert task.status == "pendente"
