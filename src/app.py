@@ -52,6 +52,7 @@ def login():
 
 @app.route('/tasks', methods=['POST'])
 def create_task():
+    # Criação de tarefas com validação
     titulo = request.form['titulo']
     descricao = request.form.get('descricao', '')
     prioridade = request.form['prioridade']
