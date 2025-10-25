@@ -14,6 +14,7 @@ users_db = [{"id": 1, "email": "admin@example.com", "senha": "123"}]  # Usuário
 # HTML simples para interface
 HTML_TEMPLATE = """
 <!DOCTYPE html>
+<!-- Interface web simples para tarefas -->
 <html>
 <head><title>Task Manager</title></head>
 <body>
