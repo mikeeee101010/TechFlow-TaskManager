@@ -1,3 +1,4 @@
+# Adicionado em 25/10/2025 para modelagem inicial
 class Task:
     def __init__(self, titulo, descricao, prioridade):
         self.titulo = titulo
