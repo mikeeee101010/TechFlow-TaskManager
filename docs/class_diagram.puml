@@ -1,0 +1,28 @@
+@startuml
+class Task {
+  -titulo: str
+  -descricao: str
+  -prioridade: str
+  -status: str
+  -data_criacao: str
+  +__init__(titulo, descricao, prioridade)
+}
+
+class User {
+  -id: int
+  -email: str
+  -senha: str
+  +__init__(id, email, senha)
+  +login()
+}
+
+class GerenciadorTarefas {
+  -lista_tarefas: list<Task>
+  +adicionarTarefa(task: Task)
+  +listarTarefas() -> list<Task>
+  +priorizarTarefa(id: int, prio: str)
+}
+
+User "1" -- "*" Task : gerencia >
+GerenciadorTarefas "1" *-- "*" Task : contém
+@enduml
