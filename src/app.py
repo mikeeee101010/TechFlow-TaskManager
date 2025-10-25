@@ -1,3 +1,5 @@
+# Autenticação simples para usuários
+
 from flask import Flask, request, jsonify, render_template_string
 import smtplib
 from email.mime.text import MIMEText
