@@ -35,3 +35,6 @@ Adicionada funcionalidade de **notificação por e-mail** ao criar/atualizar tar
 Acesse a aba "Projects" para ver o quadro com 12 cards.
 
 Exemplo de uso: Crie uma tarefa, priorize como "alta" e receba notificação.
+
+## Status do Projeto
+Sistema funcional com CRUD, login e notificações simuladas.
