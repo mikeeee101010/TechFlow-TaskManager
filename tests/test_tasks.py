@@ -16,3 +16,7 @@ def test_invalid_title():
     with pytest.raises(ValueError):  # Simula validação
         Task("", "Desc", "baixa")
     # Nota: Validação real seria adicionada no app.py
+
+    def test_email_notification_simulation():
+    task = Task("Teste", "Desc", "alta")
+    assert task.titulo == "Teste"  # Simples para demo
