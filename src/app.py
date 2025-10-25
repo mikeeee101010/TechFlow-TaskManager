@@ -63,6 +63,7 @@ def create_task():
 
 @app.route('/tasks/<int:task_id>', methods=['PUT'])
 def update_task(task_id):
+    # Atualização de tarefas com prioridade e status
     if 0 <= task_id < len(tasks_db):
         tasks_db[task_id].prioridade = request.json.get('prioridade', tasks_db[task_id].prioridade)
         tasks_db[task_id].status = request.json.get('status', tasks_db[task_id].status)
